@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/checker_board_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/vertical_padding"
+    android:paddingLeft="@dimen/horizontal_padding"
+    android:paddingRight="@dimen/horizontal_padding"
+    android:paddingTop="@dimen/vertical_padding"
+    tools:context="com.gmail.amaarquadri.checkers.ui.TwoPlayerGame">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/title_colour"
+        android:textSize="@dimen/title_size" />
+
+    <com.gmail.amaarquadri.checkers.logic.TwoPlayerCheckerBoard
+        android:id="@+id/checker_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_weight="1"
+            android:onClick="undo"
+            android:text="@string/undo"
+            android:textColor="@color/button_bar_text_colour"
+            android:textSize="@dimen/small_text_size" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="redo"
+            android:text="@string/redo"
+            android:textColor="@color/button_bar_text_colour"
+            android:textSize="@dimen/small_text_size" />
+    </LinearLayout>
+</LinearLayout>

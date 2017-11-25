@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/checker_board_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/vertical_padding"
+    android:paddingLeft="@dimen/horizontal_padding"
+    android:paddingRight="@dimen/horizontal_padding"
+    android:paddingTop="@dimen/vertical_padding"
+    tools:context="com.gmail.amaarquadri.checkers.ui.GameOver">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:gravity="center"
+        android:text="@string/game_over"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/title_colour"
+        android:textSize="@dimen/title_size" />
+
+    <TextView
+        android:id="@+id/winner_message_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:gravity="center"
+        android:textColor="@color/text_colour"
+        android:textSize="@dimen/large_text_size" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:onClick="playAgain"
+        android:text="@string/play_again"
+        android:textSize="@dimen/large_text_size" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToMainMenu"
+        android:text="@string/main_menu"
+        android:textSize="@dimen/large_text_size" />
+</LinearLayout>

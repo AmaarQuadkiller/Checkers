@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/checker_board_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/vertical_padding"
+    android:paddingLeft="@dimen/horizontal_padding"
+    android:paddingRight="@dimen/horizontal_padding"
+    android:paddingTop="@dimen/vertical_padding"
+    tools:context="com.gmail.amaarquadri.checkers.ui.SinglePlayerGameSetup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@color/title_colour"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:gravity="center"
+        android:text="Difficulty Level:"
+        android:textColor="@color/text_colour"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/difficulty_level_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/large_margin" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:gravity="center"
+        android:text="Play As:"
+        android:textColor="@color/text_colour"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/red_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Red"
+            android:textColor="@color/text_colour"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/red_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/white_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="White"
+            android:textColor="@color/text_colour"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/white_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:onClick="startSinglePlayerGame"
+        android:text="@string/single_player"
+        android:textSize="@dimen/large_text_size" />
+
+</LinearLayout>

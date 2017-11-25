@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/checker_board_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/vertical_padding"
+    android:paddingLeft="@dimen/horizontal_padding"
+    android:paddingRight="@dimen/horizontal_padding"
+    android:paddingTop="@dimen/vertical_padding"
+    tools:context="com.gmail.amaarquadri.checkers.ui.HighScores">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_margin"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAllCaps="true"
+        android:textColor="@color/title_colour"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/single_player_stats"
+        android:textColor="@color/text_colour"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/single_player_games_played_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/games_played"
+        android:textColor="@color/text_colour"
+        android:textSize="@dimen/small_text_size" />
+
+    <TextView
+        android:id="@+id/single_player_games_won_easy_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/games_won_on_easy"
+        android:textColor="@color/text_colour"
+        android:textSize="@dimen/small_text_size" />
+
+    <TextView
+        android:id="@+id/single_player_games_won_medium_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/games_won_on_medium"
+        android:textColor="@color/text_colour"
+        android:textSize="@dimen/small_text_size" />
+
+    <TextView
+        android:id="@+id/single_player_games_won_hard_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/games_won_on_hard"
+        android:textColor="@color/text_colour"
+        android:textSize="@dimen/small_text_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/two_player_stats"
+        android:textColor="@color/text_colour"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/two_player_games_played_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="@string/games_played"
+        android:textColor="@color/text_colour"
+        android:textSize="@dimen/small_text_size" />
+</LinearLayout>
