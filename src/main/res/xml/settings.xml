@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="rotateEveryTurnEnabled"
+        android:summary="@string/rotate_every_turn_summary"
+        android:title="@string/rotate_screen_every_turn" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="flyingKingsEnabled"
+        android:summary="@string/flying_kings_summary"
+        android:title="@string/allow_flying_kings" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="butterflyKillingEnabled"
+        android:summary="@string/butterfly_killing_summary"
+        android:title="@string/allow_butterfly_capturing" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="killAfterKingingEnabled"
+        android:summary="@string/kill_after_kinging_summary"
+        android:title="@string/allow_capturing_after_kinging" />
+</PreferenceScreen>
