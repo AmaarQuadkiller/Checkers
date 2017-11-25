@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gmail.amaarquadri.checkers">
+
+    <!--
+    Allowing backup lets the user access this Application's data (such as Shared Preferences) via adb.
+    Allowing full backup content backs up this Application's data to the users Google Drive.
+    -->
+    <application
+        android:name="com.gmail.amaarquadri.checkers.utility.DataAccessor"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <!-- Setting the theme to Branded Launch lets the background image be shown during the loading screen. -->
+        <activity
+            android:name="com.gmail.amaarquadri.checkers.ui.MainMenu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.BrandedLaunch">
+            <!-- Ensures that the MainMenu Activity is started when this application starts. -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gmail.amaarquadri.checkers.ui.SinglePlayerGameSetup"
+            android:label="SinglePlayerGameSetup"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gmail.amaarquadri.checkers.ui.SinglePlayerGame"
+            android:label="@string/single_player"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gmail.amaarquadri.checkers.ui.TwoPlayerGame"
+            android:label="@string/two_player"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gmail.amaarquadri.checkers.ui.HighScores"
+            android:label="@string/high_scores"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gmail.amaarquadri.checkers.ui.Settings"
+            android:label="@string/settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.gmail.amaarquadri.checkers.ui.GameOver"
+            android:label="@string/game_over"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
