@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="title_colour">#2962FF</color>
+    <color name="text_colour">#000000</color>
+    <color name="spinner_background_color">#FFFFFF</color>
+    <color name="button_bar_text_colour">#FFFFFF</color>
+    <color name="snack_bar_action_text_color">#FFCCFF</color>
+</resources>

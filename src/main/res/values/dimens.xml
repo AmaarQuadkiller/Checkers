@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="horizontal_padding">8dp</dimen>
+    <dimen name="vertical_padding">8dp</dimen>
+    <dimen name="large_margin">16dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="title_size">64sp</dimen>
+    <dimen name="large_text_size">40sp</dimen>
+    <dimen name="small_text_size">24sp</dimen>
+</resources>

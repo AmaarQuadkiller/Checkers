@@ -1,0 +1,79 @@
+<resources>
+    <!-- Main menu XML -->
+    <string name="app_name">Checkers</string>
+    <string name="single_player">Single Player</string>
+    <string name="two_player">Two Players</string>
+    <string name="high_scores">High Scores</string>
+    <string name="settings">Settings</string>
+
+    <!-- Main Menu Java (used in AlertDialogs) -->
+    <string name="continue_game_prompt">Do you want to continue with your last game?</string>
+    <string name="game_deleted_warning_prompt">If you start a new game the current one will be discarded.</string>
+    <string name="new_game">New Game</string>
+    <string name="continue_game">Continue Game</string>
+
+    <!-- Single Player Setup Java -->
+    <string-array name="difficulty_levels">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <!-- CheckerBoard Java -->
+    <string name="cannot_undo_now_message">Can\'t undo right now.</string>
+    <string name="cannot_redo_now_message">Can\'t redo right now.</string>
+
+    <!-- Single Player Game XML -->
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="loading_icon">Loading Icon</string>
+
+    <!-- Single Player Game Java -->
+    <string name="user_winner_message">You have won!</string>
+    <string name="ai_winner_message">Better luck next time!</string>
+
+    <!-- Two Player Game Java -->
+    <string name="end_turn">End Turn</string>
+    <string name="end_turn_snack_bar_message">Do you want to end your turn?</string>
+    <string name="reds_turn">It is red\'s turn!</string>
+    <string name="whites_turn">It is white\'s turn!</string>
+    <string name="cannot_undo_message">There are no more moves to undo.</string>
+    <string name="cannot_redo_message">There are no more moves to redo.</string>
+`
+    <string name="loading_error_alert_dialog_title">Sorry! The game can not be loaded!</string>
+    <string name="loading_error_alert_dialog_message">The save file has been corrupted.</string>
+
+    <!-- High Scores XML -->
+    <string name="single_player_stats">Single Player Stats</string>
+    <string name="two_player_stats">Two Player Stats</string>
+    <string name="games_played">Games Played:</string>
+    <string name="games_won_on_easy">Games Won on Easy:</string>
+    <string name="games_won_on_medium">Games Won on Medium:</string>
+    <string name="games_won_on_hard">Games Won on Hard:</string>
+
+    <!-- Settings XML -->
+    <string name="rotate_screen_every_turn">Rotate Screen Every Turn</string>
+    <string name="rotate_every_turn_summary">Rotates the screen in between turns in two player games.</string>
+    <string name="allow_flying_kings">Allow Flying Kings</string>
+    <string name="flying_kings_summary">Allows a king to move any number of squares per move.</string>
+    <string name="allow_butterfly_capturing">Allow Butterfly Capturing</string>
+    <string name="butterfly_killing_summary">Allows pieces at the left and right edges of the board to be captured.</string>
+    <string name="allow_capturing_after_kinging">Allow Capturing After Kinging</string>
+    <string name="kill_after_kinging_summary">Allows a piece that becomes a king to capture other pieces in the same move.</string>
+
+    <!-- Settings Java (used in AlertDialog) -->
+    <string name="confirm_settings_change_dialog">Are you sure you want to change the game settings?</string>
+    <string name="confirm_settings_change_dialog_warning">The currently saved games will be discarded.</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="changes_saved">Changes saved</string>
+
+    <!-- Game Over XML -->
+    <string name="game_over">Game Over</string>
+    <string name="red_winner_message">Red was the winner!</string>
+    <string name="white_winner_message">White was the winner!</string>
+
+    <!-- Game Over Java -->
+    <string name="play_again">Play Again</string>
+    <string name="main_menu">Main Menu</string>
+</resources>
